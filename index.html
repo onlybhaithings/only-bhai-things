@@ -7,227 +7,216 @@
 <title>ONLY BHAI THINGS BY MUSTAKIN</title>
 
 <style>
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
-body {
-    background: #050505;
-    color: #fff;
-    font-family: Arial, sans-serif;
+body{
+    background:#050505;
+    color:#fff;
+    font-family:Arial,sans-serif;
 }
 
 /* HEADER */
-header {
-    text-align: center;
-    padding: 35px 15px 25px;
-    border-bottom: 1px solid #222;
+header{
+    text-align:center;
+    padding:32px 15px 25px;
+    border-bottom:1px solid #222;
 }
 
-.small-title {
-    font-size: 13px;
-    letter-spacing: 3px;
-    font-weight: 600;
-    color: #aaa;
-    margin-bottom: 8px;
+.small-title{
+    font-size:12px;
+    letter-spacing:3px;
+    color:#aaa;
+    font-weight:600;
+    margin-bottom:7px;
 }
 
-.main-title {
-    font-size: 30px;
-    font-weight: 900;
-    letter-spacing: 2px;
+.main-title{
+    font-size:30px;
+    letter-spacing:2px;
+    font-weight:900;
 }
 
-.subtitle {
-    margin-top: 12px;
-    color: #777;
-    font-size: 13px;
+/* MENU */
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    padding:20px 10px;
 }
 
-/* BUTTONS */
-.menu {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    padding: 20px 10px;
+.menu button{
+    border:0;
+    padding:11px 25px;
+    border-radius:30px;
+    background:#202126;
+    color:#fff;
+    font-weight:bold;
 }
 
-.menu button {
-    border: none;
-    background: #202126;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 30px;
-    font-weight: bold;
-    cursor: pointer;
+.menu button.active{
+    background:#fff;
+    color:#000;
 }
 
-.menu button.active {
-    background: #fff;
-    color: #000;
+/* GALLERY */
+.gallery{
+    max-width:1100px;
+    margin:auto;
+    padding:15px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:18px;
 }
 
-/* WALLPAPER GRID */
-.gallery {
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
-    padding: 15px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 18px;
+.card{
+    background:#17181c;
+    border:1px solid #292a2e;
+    border-radius:15px;
+    overflow:hidden;
 }
 
-.card {
-    background: #17181c;
-    border-radius: 15px;
-    overflow: hidden;
-    border: 1px solid #292a2e;
+.card-image{
+    width:100%;
+    aspect-ratio:9/16;
+    object-fit:cover;
+    display:block;
 }
 
-.card img {
-    width: 100%;
-    display: block;
-    aspect-ratio: 9 / 16;
-    object-fit: cover;
+.card-info{
+    padding:12px;
 }
 
-/* FREE IMAGE */
-.card-info {
-    padding: 12px;
+.card-title{
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:10px;
 }
 
-.card-title {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.download {
-    width: 100%;
-    border: none;
-    background: #f10b16;
-    color: white;
-    padding: 12px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
+.download{
+    width:100%;
+    border:0;
+    background:#f10b16;
+    color:#fff;
+    padding:12px;
+    border-radius:8px;
+    font-weight:bold;
 }
 
 /* PREMIUM */
-.premium-image {
-    position: relative;
+.premium-photo{
+    position:relative;
+    overflow:hidden;
 }
 
-.premium-image img {
-    filter: blur(7px);
-    transform: scale(1.04);
+.premium-photo img{
+    filter:blur(8px);
+    transform:scale(1.06);
 }
 
-.lock {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: rgba(0,0,0,0.30);
+.lock{
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background:rgba(0,0,0,.35);
 }
 
-.lock-icon {
-    font-size: 45px;
-    margin-bottom: 8px;
+.lock-icon{
+    font-size:45px;
 }
 
-.premium-text {
-    font-weight: bold;
-    font-size: 14px;
+.lock-text{
+    margin-top:8px;
+    font-size:13px;
+    font-weight:bold;
 }
 
-.unlock {
-    width: 100%;
-    border: none;
-    background: #ffb000;
-    color: #000;
-    padding: 12px;
-    border-radius: 8px;
-    font-weight: 900;
-    cursor: pointer;
+.unlock{
+    width:100%;
+    border:0;
+    background:#ffb000;
+    color:#000;
+    padding:12px;
+    border-radius:8px;
+    font-weight:900;
 }
 
-/* MODAL */
-.modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.88);
-    z-index: 999;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+/* POPUP */
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:999;
+    background:rgba(0,0,0,.9);
+    justify-content:center;
+    align-items:center;
+    padding:20px;
 }
 
-.modal-box {
-    background: #17181c;
-    width: 100%;
-    max-width: 400px;
-    padding: 25px;
-    border-radius: 18px;
-    text-align: center;
-    border: 1px solid #333;
+.modal-box{
+    width:100%;
+    max-width:390px;
+    background:#17181c;
+    border:1px solid #333;
+    border-radius:18px;
+    padding:24px;
+    text-align:center;
 }
 
-.modal-box h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
+.modal-box h2{
+    font-size:21px;
+    margin-bottom:10px;
 }
 
-.price {
-    color: #ffb000;
-    font-size: 20px;
-    font-weight: 900;
-    margin: 12px 0;
+.price{
+    color:#ffb000;
+    font-size:20px;
+    font-weight:900;
+    margin:10px 0;
 }
 
-.modal-box p {
-    color: #aaa;
-    font-size: 13px;
-    margin-bottom: 18px;
+.modal-box p{
+    color:#aaa;
+    font-size:13px;
+    margin:12px 0;
 }
 
-.scanner {
-    width: 100%;
-    max-width: 280px;
-    margin: 10px auto 18px;
-    display: block;
-    border-radius: 10px;
-    background: white;
+.scanner{
+    width:100%;
+    max-width:270px;
+    background:#fff;
+    border-radius:10px;
+    display:block;
+    margin:15px auto;
 }
 
-.close {
-    width: 100%;
-    border: none;
-    background: #333;
-    color: white;
-    padding: 12px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
+.close{
+    width:100%;
+    border:0;
+    background:#333;
+    color:#fff;
+    padding:12px;
+    border-radius:8px;
+    font-weight:bold;
 }
 
-/* PREMIUM HIDE */
-.hidden {
-    display: none !important;
+/* HIDDEN */
+.hidden{
+    display:none!important;
 }
 
 /* FOOTER */
-footer {
-    text-align: center;
-    color: #666;
-    font-size: 12px;
-    padding: 45px 10px;
+footer{
+    text-align:center;
+    color:#666;
+    font-size:11px;
+    padding:45px 10px;
 }
 </style>
 </head>
@@ -235,7 +224,6 @@ footer {
 <body>
 
 <header>
-
     <div class="small-title">
         ONLY BHAI THINGS BY
     </div>
@@ -243,17 +231,20 @@ footer {
     <div class="main-title">
         MUSTAKIN
     </div>
-
 </header>
+
 
 <!-- ONLY TWO OPTIONS -->
 <div class="menu">
 
-    <button id="allBtn" class="active" onclick="showAll()">
+    <button id="allBtn"
+            class="active"
+            onclick="showAll()">
         ALL
     </button>
 
-    <button id="premiumBtn" onclick="showPremium()">
+    <button id="premiumBtn"
+            onclick="showPremium()">
         PREMIUM
     </button>
 
@@ -265,7 +256,10 @@ footer {
     <!-- FREE WALLPAPER -->
     <div class="card free">
 
-        <img src="wallpapers/sal-man.jpeg" alt="Wallpaper">
+        <img
+            class="card-image"
+            src="wallpapers/sal-man.jpeg"
+            alt="Wallpaper">
 
         <div class="card-info">
 
@@ -273,7 +267,8 @@ footer {
                 Salman Wallpaper
             </div>
 
-            <button class="download"
+            <button
+                class="download"
                 onclick="downloadImage('wallpapers/sal-man.jpeg')">
                 DOWNLOAD
             </button>
@@ -286,9 +281,12 @@ footer {
     <!-- PREMIUM WALLPAPER -->
     <div class="card premium">
 
-        <div class="premium-image">
+        <div class="premium-photo">
 
-            <img src="wallpapers/sal-man.jpeg" alt="Premium Wallpaper">
+            <img
+                class="card-image"
+                src="wallpapers/sal-man.jpeg"
+                alt="Premium Wallpaper">
 
             <div class="lock">
 
@@ -296,7 +294,7 @@ footer {
                     🔒
                 </div>
 
-                <div class="premium-text">
+                <div class="lock-text">
                     PREMIUM WALLPAPER
                 </div>
 
@@ -310,7 +308,9 @@ footer {
                 Premium Wallpaper
             </div>
 
-            <button class="unlock" onclick="openPayment()">
+            <button
+                class="unlock"
+                onclick="openPayment()">
                 UNLOCK FOR ₹10 ONLY
             </button>
 
@@ -335,20 +335,22 @@ footer {
         </div>
 
         <p>
-            ₹10 payment karne ke baad premium wallpaper unlock hoga.
+            ₹10 pay karke premium wallpaper unlock karein.
         </p>
 
-        <!-- YOUR SCANNER -->
+        <!-- SCANNER -->
         <img
             src="scanner.jpg"
             class="scanner"
             alt="Payment Scanner">
 
         <p>
-            Scanner se ₹10 pay karein.
+            Scanner se ₹10 payment karein.
         </p>
 
-        <button class="close" onclick="closePayment()">
+        <button
+            class="close"
+            onclick="closePayment()">
             CLOSE
         </button>
 
@@ -364,70 +366,66 @@ footer {
 
 <script>
 
-/* SHOW ALL */
-function showAll() {
+function showAll(){
 
     document.querySelectorAll(".free")
-        .forEach(card => {
-            card.classList.remove("hidden");
-        });
+    .forEach(function(card){
+        card.classList.remove("hidden");
+    });
 
     document.querySelectorAll(".premium")
-        .forEach(card => {
-            card.classList.remove("hidden");
-        });
+    .forEach(function(card){
+        card.classList.remove("hidden");
+    });
 
     document.getElementById("allBtn")
-        .classList.add("active");
+    .classList.add("active");
 
     document.getElementById("premiumBtn")
-        .classList.remove("active");
+    .classList.remove("active");
 }
 
 
-/* SHOW PREMIUM ONLY */
-function showPremium() {
+function showPremium(){
 
     document.querySelectorAll(".free")
-        .forEach(card => {
-            card.classList.add("hidden");
-        });
+    .forEach(function(card){
+        card.classList.add("hidden");
+    });
 
     document.querySelectorAll(".premium")
-        .forEach(card => {
-            card.classList.remove("hidden");
-        });
+    .forEach(function(card){
+        card.classList.remove("hidden");
+    });
 
     document.getElementById("premiumBtn")
-        .classList.add("active");
+    .classList.add("active");
 
     document.getElementById("allBtn")
-        .classList.remove("active");
+    .classList.remove("active");
 }
 
 
-/* PAYMENT POPUP */
-function openPayment() {
+function openPayment(){
 
     document.getElementById("paymentModal")
-        .style.display = "flex";
+    .style.display="flex";
 }
 
 
-function closePayment() {
+function closePayment(){
 
     document.getElementById("paymentModal")
-        .style.display = "none";
+    .style.display="none";
 }
 
 
-/* DOWNLOAD */
-function downloadImage(image) {
+function downloadImage(image){
 
-    const link = document.createElement("a");
+    const link=document.createElement("a");
 
-    link.href = image;
-    link.download = "";
+    link.href=image;
+    link.download="wallpaper";
 
     document.body.appendChild(link);
 
@@ -439,4 +437,4 @@ function downloadImage(image) {
 </script>
 
 </body>
-</html>
+    </html>
