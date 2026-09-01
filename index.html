@@ -1,320 +1,889 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ONLY BHAI THINGS</title>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-<meta name="google-site-verification" content="-g1X61DAQf-PStdyqIlJW6KJMhlKHXOGzeVlmHQwApw" />
+<title>ONLY BHAI THINGS | Mustakin</title>
 
-<meta name="description" content="ONLY BHAI THINGS BY MUSTAKIN - Wallpapers and premium images.">
-<meta name="robots" content="index, follow">
+<meta name="google-site-verification"
+      content="-g1X61DAQf-PStdyqIlJW6KJMhlKHXOGzeVlmHQwApw">
+
+<meta name="description"
+      content="ONLY BHAI THINGS BY MUSTAKIN - HD Wallpapers, Images and Premium Wallpapers.">
+
+<meta name="robots"
+      content="index, follow">
+
+<!-- INSTAGRAM / SOCIAL PREVIEW -->
+<meta property="og:title"
+      content="ONLY BHAI THINGS BY MUSTAKIN">
+
+<meta property="og:description"
+      content="HD Wallpapers & Premium Images">
+
+<meta property="og:type"
+      content="website">
+
 
 <style>
+
+/* =========================
+   RESET
+========================= */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+
+/* =========================
+   BODY
+========================= */
+
 body {
+
     background: #050505;
+
     color: #fff;
+
     font-family: Arial, sans-serif;
+
 }
 
-/* HEADER */
+
+/* =========================
+   HEADER
+========================= */
+
 header {
+
     text-align: center;
+
     padding: 32px 15px 25px;
+
     border-bottom: 1px solid #222;
+
 }
+
 
 .small-title {
+
     font-size: 12px;
+
     letter-spacing: 3px;
+
     font-weight: 600;
+
     color: #aaa;
+
     margin-bottom: 8px;
+
 }
+
 
 .main-title {
+
     font-size: 29px;
+
     font-weight: 900;
+
     letter-spacing: 2px;
+
 }
 
-/* MENU */
-.menu {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    padding: 20px 10px;
+
+/* =========================
+   INSTAGRAM SECTION
+========================= */
+
+.instagram-section {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    margin: 25px auto 5px;
+
+    padding: 0 15px;
+
 }
+
+
+.instagram-card {
+
+    background: linear-gradient(
+        145deg,
+        #17181c,
+        #101114
+    );
+
+    border: 1px solid #292a2e;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,0.25);
+
+}
+
+
+/* INSTAGRAM ICON */
+
+.instagram-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    margin: 0 auto 12px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 29px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #833ab4,
+            #fd1d1d,
+            #fcb045
+        );
+
+}
+
+
+/* INSTAGRAM TITLE */
+
+.instagram-title {
+
+    font-size: 19px;
+
+    font-weight: 900;
+
+    margin-bottom: 5px;
+
+}
+
+
+.instagram-username {
+
+    color: #aaa;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* INSTAGRAM BUTTON */
+
+.instagram-button {
+
+    display: block;
+
+    width: 100%;
+
+    text-decoration: none;
+
+    background:
+        linear-gradient(
+            90deg,
+            #833ab4,
+            #fd1d1d,
+            #fcb045
+        );
+
+    color: white;
+
+    padding: 13px 15px;
+
+    border-radius: 9px;
+
+    font-size: 13px;
+
+    font-weight: 900;
+
+    transition: 0.2s;
+
+}
+
+
+.instagram-button:hover {
+
+    transform: scale(1.02);
+
+    opacity: 0.9;
+
+}
+
+
+/* SECOND BUTTON */
+
+.instagram-profile {
+
+    display: block;
+
+    width: 100%;
+
+    margin-top: 9px;
+
+    text-decoration: none;
+
+    background: #292a2e;
+
+    color: white;
+
+    padding: 12px;
+
+    border-radius: 9px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+.instagram-profile:hover {
+
+    background: #33343a;
+
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 20px 10px;
+
+}
+
 
 .menu button {
+
     border: none;
+
     background: #202126;
+
     color: white;
+
     padding: 11px 25px;
+
     border-radius: 30px;
+
     font-weight: bold;
+
     cursor: pointer;
+
 }
+
 
 .menu button.active {
+
     background: white;
+
     color: black;
+
 }
 
-/* GALLERY */
+
+/* =========================
+   GALLERY
+========================= */
+
 .gallery {
+
     width: 100%;
+
     max-width: 1100px;
+
     margin: auto;
+
     padding: 10px 15px 30px;
+
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
     gap: 18px;
+
 }
 
-/* CARD */
+
+/* =========================
+   CARD
+========================= */
+
 .card {
+
     background: #17181c;
+
     border-radius: 15px;
+
     overflow: hidden;
+
     border: 1px solid #292a2e;
+
 }
+
 
 .card img {
+
     width: 100%;
+
     display: block;
+
     aspect-ratio: 9 / 16;
+
     object-fit: cover;
+
 }
 
-/* INFO */
+
+/* =========================
+   CARD INFO
+========================= */
+
 .card-info {
+
     padding: 12px;
+
 }
+
 
 .card-title {
+
     font-size: 13px;
+
     font-weight: bold;
+
     margin-bottom: 10px;
+
 }
 
-/* DOWNLOAD */
+
+/* =========================
+   DOWNLOAD
+========================= */
+
 .download {
+
     width: 100%;
+
     border: none;
+
     background: #f10b16;
+
     color: white;
+
     padding: 12px;
+
     border-radius: 8px;
+
     font-weight: bold;
+
     cursor: pointer;
+
 }
 
-/* PREMIUM */
-.premium-image {
-    position: relative;
-    overflow: hidden;
+
+.download:hover {
+
+    background: #ff1722;
+
 }
+
+
+/* =========================
+   PREMIUM
+========================= */
+
+.premium-image {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
 
 .premium-image img {
+
     filter: blur(8px);
+
     transform: scale(1.06);
+
 }
+
 
 .lock {
+
     position: absolute;
+
     inset: 0;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     flex-direction: column;
-    background: rgba(0,0,0,0.35);
+
+    background:
+        rgba(0,0,0,0.35);
+
 }
+
 
 .lock-icon {
+
     font-size: 43px;
+
     margin-bottom: 8px;
+
 }
+
 
 .premium-text {
+
     font-size: 13px;
+
     font-weight: 900;
+
 }
 
-/* UNLOCK */
+
+/* =========================
+   UNLOCK
+========================= */
+
 .unlock {
+
     width: 100%;
+
     border: none;
+
     background: #ffb000;
+
     color: #000;
+
     padding: 12px;
+
     border-radius: 8px;
+
     font-weight: 900;
+
     cursor: pointer;
+
 }
 
-/* HIDDEN */
+
+.unlock:hover {
+
+    background: #ffc226;
+
+}
+
+
+/* =========================
+   HIDDEN
+========================= */
+
 .hidden {
+
     display: none !important;
+
 }
 
-/* PAYMENT MODAL */
+
+/* =========================
+   PAYMENT MODAL
+========================= */
+
 .modal {
+
     display: none;
+
     position: fixed;
+
     inset: 0;
-    background: rgba(0,0,0,0.90);
+
+    background:
+        rgba(0,0,0,0.90);
+
     z-index: 9999;
+
     justify-content: center;
+
     align-items: center;
+
     padding: 20px;
+
 }
+
 
 .modal-box {
+
     background: #17181c;
+
     width: 100%;
+
     max-width: 390px;
+
     padding: 25px;
+
     border-radius: 18px;
+
     text-align: center;
+
     border: 1px solid #333;
+
 }
+
 
 .modal-box h2 {
+
     font-size: 20px;
+
     margin-bottom: 12px;
+
 }
+
 
 .price {
+
     color: #ffb000;
+
     font-size: 20px;
+
     font-weight: 900;
+
     margin: 12px 0;
+
 }
+
 
 .modal-box p {
+
     color: #aaa;
+
     font-size: 13px;
+
     line-height: 1.5;
+
     margin-bottom: 15px;
+
 }
 
-/* SCANNER */
+
+/* =========================
+   SCANNER
+========================= */
+
 .scanner {
+
     width: 100%;
+
     max-width: 280px;
+
     display: block;
+
     margin: 15px auto;
+
     border-radius: 12px;
+
 }
 
-/* CLOSE */
+
+/* =========================
+   CLOSE
+========================= */
+
 .close {
+
     width: 100%;
+
     border: none;
+
     background: #333;
+
     color: white;
+
     padding: 12px;
+
     border-radius: 8px;
+
     font-weight: bold;
+
     cursor: pointer;
+
 }
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+========================= */
+
 footer {
+
     text-align: center;
+
     color: #666;
+
     font-size: 12px;
+
     padding: 45px 10px;
+
 }
 
-/* MOBILE */
+
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 500px) {
 
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
         gap: 12px;
+
         padding-left: 12px;
+
         padding-right: 12px;
+
     }
+
 
     .card-info {
+
         padding: 9px;
+
     }
 
+
     .card-title {
+
         font-size: 11px;
+
     }
+
 
     .download,
     .unlock {
+
         padding: 11px 5px;
+
         font-size: 11px;
+
     }
+
 
     .main-title {
+
         font-size: 26px;
+
     }
+
+
+    .instagram-section {
+
+        margin-top: 20px;
+
+    }
+
+
+    .instagram-card {
+
+        padding: 18px 15px;
+
+    }
+
 }
+
 </style>
+
 </head>
 
+
 <body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
     <div class="small-title">
+
         ONLY BHAI THINGS BY
+
     </div>
 
+
     <div class="main-title">
+
         MUSTAKIN
+
     </div>
 
 </header>
 
 
-<!-- ONLY ALL AND PREMIUM -->
+
+<!-- =========================
+     INSTAGRAM
+========================= -->
+
+<section class="instagram-section">
+
+    <div class="instagram-card">
+
+
+        <div class="instagram-icon">
+
+            ◎
+
+        </div>
+
+
+        <div class="instagram-title">
+
+            ONLY BHAI THINGS
+
+        </div>
+
+
+        <div class="instagram-username">
+
+            @onlybhaithings_
+
+        </div>
+
+
+        <!-- FOLLOW BUTTON -->
+
+        <a
+            href="https://www.instagram.com/onlybhaithings_/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="instagram-button">
+
+            FOLLOW ON INSTAGRAM
+
+        </a>
+
+
+        <!-- PROFILE BUTTON -->
+
+        <a
+            href="https://www.instagram.com/onlybhaithings_/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="instagram-profile">
+
+            VISIT INSTAGRAM PROFILE
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     ALL / PREMIUM
+========================= -->
+
 <div class="menu">
 
-    <button id="allBtn"
-            class="active"
-            onclick="showAll()">
+    <button
+        id="allBtn"
+        class="active"
+        onclick="showAll()">
+
         ALL
+
     </button>
 
-    <button id="premiumBtn"
-            onclick="showPremium()">
+
+    <button
+        id="premiumBtn"
+        onclick="showPremium()">
+
         PREMIUM
+
     </button>
 
 </div>
 
 
+
+<!-- =========================
+     GALLERY
+========================= -->
+
 <div class="gallery">
 
+
     <!-- FREE WALLPAPER -->
+
     <div class="card free">
 
-        <img src="wallpapers/sal-man.jpeg"
-             alt="Salman Wallpaper">
+        <img
+            src="wallpapers/sal-man.jpeg"
+            alt="Salman Wallpaper">
+
 
         <div class="card-info">
 
             <div class="card-title">
+
                 Salman Wallpaper
+
             </div>
 
-            <button class="download"
-                    onclick="downloadImage('wallpapers/sal-man.jpeg')">
+
+            <button
+                class="download"
+                onclick="downloadImage('wallpapers/sal-man.jpeg')">
+
                 DOWNLOAD
+
             </button>
 
         </div>
@@ -322,37 +891,53 @@ footer {
     </div>
 
 
+
     <!-- PREMIUM WALLPAPER -->
+
     <div class="card premium">
 
         <div class="premium-image">
 
-            <img src="wallpapers/BHAI-4K-premium.jpeg"
-                 alt="Premium Wallpaper">
+            <img
+                src="wallpapers/BHAI-4K-premium.jpeg"
+                alt="Premium Wallpaper">
+
 
             <div class="lock">
 
                 <div class="lock-icon">
+
                     🔒
+
                 </div>
 
+
                 <div class="premium-text">
+
                     PREMIUM WALLPAPER
+
                 </div>
 
             </div>
 
         </div>
 
+
         <div class="card-info">
 
             <div class="card-title">
+
                 BHAI 4K PREMIUM
+
             </div>
 
-            <button class="unlock"
-                    onclick="openPayment()">
+
+            <button
+                class="unlock"
+                onclick="openPayment()">
+
                 UNLOCK FOR PAY ₹10 ONLY
+
             </button>
 
         </div>
@@ -362,36 +947,60 @@ footer {
 </div>
 
 
-<!-- PAYMENT POPUP -->
-<div class="modal"
-     id="paymentModal">
+
+<!-- =========================
+     PAYMENT POPUP
+========================= -->
+
+<div
+    class="modal"
+    id="paymentModal">
+
 
     <div class="modal-box">
 
+
         <h2>
+
             🔒 PREMIUM WALLPAPER
+
         </h2>
 
+
         <div class="price">
+
             UNLOCK FOR ₹10 ONLY
+
         </div>
 
+
         <p>
+
             Premium wallpaper unlock karne ke liye
             ₹10 pay karein.
+
         </p>
 
-        <img src="scanner.jpg"
-             class="scanner"
-             alt="Payment Scanner">
+
+        <img
+            src="scanner.jpg"
+            class="scanner"
+            alt="Payment Scanner">
+
 
         <p>
+
             Scanner se ₹10 payment karein.
+
         </p>
 
-        <button class="close"
-                onclick="closePayment()">
+
+        <button
+            class="close"
+            onclick="closePayment()">
+
             CLOSE
+
         </button>
 
     </div>
@@ -399,94 +1008,194 @@ footer {
 </div>
 
 
+
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
+
     © 2026 ONLY BHAI THINGS BY MUSTAKIN
+
+    <br><br>
+
+    <a
+        href="https://www.instagram.com/onlybhaithings_/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="
+            color:#aaa;
+            text-decoration:none;
+            font-weight:bold;
+        ">
+
+        Instagram @onlybhaithings_
+
+    </a>
+
 </footer>
+
 
 
 <script>
 
+
+/* =========================
+   SHOW ALL
+========================= */
+
 function showAll() {
 
-    document.querySelectorAll(".free")
+    document
+        .querySelectorAll(".free")
         .forEach(function(card) {
+
             card.classList.remove("hidden");
+
         });
 
-    document.querySelectorAll(".premium")
+
+    document
+        .querySelectorAll(".premium")
         .forEach(function(card) {
+
             card.classList.remove("hidden");
+
         });
 
-    document.getElementById("allBtn")
+
+    document
+        .getElementById("allBtn")
         .classList.add("active");
 
-    document.getElementById("premiumBtn")
+
+    document
+        .getElementById("premiumBtn")
         .classList.remove("active");
+
 }
 
+
+
+/* =========================
+   SHOW PREMIUM
+========================= */
 
 function showPremium() {
 
-    document.querySelectorAll(".free")
+    document
+        .querySelectorAll(".free")
         .forEach(function(card) {
+
             card.classList.add("hidden");
+
         });
 
-    document.querySelectorAll(".premium")
+
+    document
+        .querySelectorAll(".premium")
         .forEach(function(card) {
+
             card.classList.remove("hidden");
+
         });
 
-    document.getElementById("premiumBtn")
+
+    document
+        .getElementById("premiumBtn")
         .classList.add("active");
 
-    document.getElementById("allBtn")
+
+    document
+        .getElementById("allBtn")
         .classList.remove("active");
+
 }
 
+
+
+/* =========================
+   OPEN PAYMENT
+========================= */
 
 function openPayment() {
 
-    document.getElementById("paymentModal")
+    document
+        .getElementById("paymentModal")
         .style.display = "flex";
+
 }
 
+
+
+/* =========================
+   CLOSE PAYMENT
+========================= */
 
 function closePayment() {
 
-    document.getElementById("paymentModal")
+    document
+        .getElementById("paymentModal")
         .style.display = "none";
+
 }
 
+
+
+/* =========================
+   DOWNLOAD IMAGE
+========================= */
 
 function downloadImage(image) {
 
-    const link = document.createElement("a");
+    const link =
+        document.createElement("a");
+
 
     link.href = image;
+
     link.download = "";
 
-    document.body.appendChild(link);
+
+    document
+        .body
+        .appendChild(link);
+
 
     link.click();
 
-    document.body.removeChild(link);
+
+    document
+        .body
+        .removeChild(link);
+
 }
 
+
+
+/* =========================
+   CLOSE MODAL OUTSIDE
+========================= */
 
 window.onclick = function(event) {
 
     const modal =
-        document.getElementById("paymentModal");
+        document.getElementById(
+            "paymentModal"
+        );
+
 
     if (event.target === modal) {
+
         modal.style.display = "none";
+
     }
 
 };
 
 </script>
 
+
 </body>
-            </html>
+
+    </html>
