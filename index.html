@@ -14,7 +14,7 @@
       content="-g1X61DAQf-PStdyqIlJW6KJMhlKHXOGzeVlmHQwApw">
 
 <meta name="description"
-      content="ONLY BHAI THINGS BY MUSTAKIN - HD Wallpapers and Premium Wallpapers.">
+      content="ONLY BHAI THINGS BY MUSTAKIN - Free and Premium Wallpapers.">
 
 <meta name="robots"
       content="index, follow">
@@ -22,9 +22,9 @@
 
 <style>
 
-/* =========================================
+/* =========================
    RESET
-========================================= */
+========================= */
 
 * {
     box-sizing: border-box;
@@ -33,9 +33,9 @@
 }
 
 
-/* =========================================
+/* =========================
    BODY
-========================================= */
+========================= */
 
 body {
 
@@ -45,14 +45,12 @@ body {
 
     font-family: Arial, sans-serif;
 
-    min-height: 100vh;
-
 }
 
 
-/* =========================================
+/* =========================
    HEADER
-========================================= */
+========================= */
 
 header {
 
@@ -63,7 +61,6 @@ header {
     border-bottom: 1px solid #222;
 
 }
-
 
 .small-title {
 
@@ -79,7 +76,6 @@ header {
 
 }
 
-
 .main-title {
 
     font-size: 29px;
@@ -91,56 +87,48 @@ header {
 }
 
 
-/* =========================================
-   INSTAGRAM TOP BUTTON
-========================================= */
+/* =========================
+   INSTAGRAM
+========================= */
 
 .instagram {
 
     text-align: center;
 
-    padding: 15px 10px 5px;
+    padding: 18px 10px 5px;
 
 }
-
 
 .instagram a {
 
     display: inline-block;
 
-    color: #aaa;
-
     text-decoration: none;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            90deg,
+            #833ab4,
+            #fd1d1d,
+            #fcb045
+        );
+
+    padding: 10px 20px;
+
+    border-radius: 25px;
 
     font-size: 13px;
 
-    font-weight: bold;
-
-    border: 1px solid #292a2e;
-
-    background: #151619;
-
-    padding: 10px 19px;
-
-    border-radius: 22px;
-
-    transition: 0.2s;
+    font-weight: 900;
 
 }
 
 
-.instagram a:hover {
-
-    color: white;
-
-    background: #202126;
-
-}
-
-
-/* =========================================
+/* =========================
    MENU
-========================================= */
+========================= */
 
 .menu {
 
@@ -153,7 +141,6 @@ header {
     padding: 20px 10px;
 
 }
-
 
 .menu button {
 
@@ -173,7 +160,6 @@ header {
 
 }
 
-
 .menu button.active {
 
     background: white;
@@ -183,9 +169,9 @@ header {
 }
 
 
-/* =========================================
+/* =========================
    GALLERY
-========================================= */
+========================= */
 
 .gallery {
 
@@ -199,16 +185,17 @@ header {
 
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+        repeat(2, 1fr);
 
     gap: 18px;
 
 }
 
 
-/* =========================================
+/* =========================
    CARD
-========================================= */
+========================= */
 
 .card {
 
@@ -223,9 +210,9 @@ header {
 }
 
 
-/* =========================================
-   FREE IMAGE
-========================================= */
+/* =========================
+   NORMAL IMAGE
+========================= */
 
 .card-image {
 
@@ -238,7 +225,6 @@ header {
     background: #111;
 
 }
-
 
 .card-image img {
 
@@ -253,16 +239,15 @@ header {
 }
 
 
-/* =========================================
+/* =========================
    CARD INFO
-========================================= */
+========================= */
 
 .card-info {
 
     padding: 12px;
 
 }
-
 
 .card-title {
 
@@ -277,9 +262,9 @@ header {
 }
 
 
-/* =========================================
-   FREE DOWNLOAD BUTTON
-========================================= */
+/* =========================
+   DOWNLOAD
+========================= */
 
 .download {
 
@@ -301,7 +286,6 @@ header {
 
 }
 
-
 .download:hover {
 
     background: #ff1823;
@@ -309,9 +293,9 @@ header {
 }
 
 
-/* =========================================
+/* =========================
    PREMIUM IMAGE
-========================================= */
+========================= */
 
 .premium-image {
 
@@ -323,10 +307,7 @@ header {
 
     overflow: hidden;
 
-    background: #111;
-
 }
-
 
 .premium-image img {
 
@@ -336,33 +317,16 @@ header {
 
     object-fit: cover;
 
-    filter: blur(9px);
+    filter: blur(8px);
 
     transform: scale(1.08);
 
-    transition:
-        filter 0.4s ease,
-        transform 0.4s ease;
-
 }
 
 
-/* =========================================
-   PREMIUM UNLOCKED
-========================================= */
-
-.premium-image.unlocked img {
-
-    filter: none;
-
-    transform: scale(1);
-
-}
-
-
-/* =========================================
-   PREMIUM LOCK OVERLAY
-========================================= */
+/* =========================
+   LOCK
+========================= */
 
 .lock {
 
@@ -378,45 +342,31 @@ header {
 
     flex-direction: column;
 
-    background: rgba(0,0,0,0.43);
-
-    transition: opacity 0.35s ease;
+    background:
+        rgba(0,0,0,0.45);
 
 }
-
 
 .lock-icon {
 
-    font-size: 43px;
+    font-size: 42px;
 
-    margin-bottom: 8px;
+    margin-bottom: 7px;
 
 }
 
-
 .premium-text {
 
-    font-size: 13px;
+    font-size: 12px;
 
     font-weight: 900;
 
 }
 
 
-/* Remove lock after unlock */
-
-.premium-image.unlocked .lock {
-
-    opacity: 0;
-
-    pointer-events: none;
-
-}
-
-
-/* =========================================
-   PREMIUM UNLOCK BUTTON
-========================================= */
+/* =========================
+   PREMIUM BUTTON
+========================= */
 
 .unlock {
 
@@ -438,7 +388,6 @@ header {
 
 }
 
-
 .unlock:hover {
 
     background: #ffc226;
@@ -446,41 +395,9 @@ header {
 }
 
 
-/* =========================================
-   PREMIUM DOWNLOAD
-========================================= */
-
-.premium-download {
-
-    width: 100%;
-
-    border: none;
-
-    background: #f10b16;
-
-    color: white;
-
-    padding: 12px;
-
-    border-radius: 8px;
-
-    font-weight: bold;
-
-    cursor: pointer;
-
-}
-
-
-.premium-download:hover {
-
-    background: #ff1823;
-
-}
-
-
-/* =========================================
+/* =========================
    HIDDEN
-========================================= */
+========================= */
 
 .hidden {
 
@@ -489,9 +406,9 @@ header {
 }
 
 
-/* =========================================
+/* =========================
    FOLLOW MODAL
-========================================= */
+========================= */
 
 .modal {
 
@@ -501,9 +418,10 @@ header {
 
     inset: 0;
 
-    background: rgba(0,0,0,0.92);
-
     z-index: 9999;
+
+    background:
+        rgba(0,0,0,0.92);
 
     justify-content: center;
 
@@ -513,50 +431,31 @@ header {
 
 }
 
-
 .modal-box {
-
-    background: #17181c;
 
     width: 100%;
 
     max-width: 390px;
 
-    padding: 28px 24px;
-
-    border-radius: 18px;
-
-    text-align: center;
+    background: #17181c;
 
     border: 1px solid #333;
 
-    box-shadow:
-        0 20px 60px rgba(0,0,0,0.7);
+    border-radius: 18px;
+
+    padding: 25px;
+
+    text-align: center;
 
 }
-
 
 .modal-box h2 {
 
-    font-size: 21px;
+    font-size: 20px;
 
-    margin-bottom: 14px;
-
-}
-
-
-.follow-title {
-
-    color: #ffb000;
-
-    font-size: 21px;
-
-    font-weight: 900;
-
-    margin: 10px 0 15px;
+    margin-bottom: 12px;
 
 }
-
 
 .modal-box p {
 
@@ -571,9 +470,9 @@ header {
 }
 
 
-/* =========================================
-   FOLLOW INSTAGRAM BUTTON
-========================================= */
+/* =========================
+   INSTAGRAM MODAL BUTTON
+========================= */
 
 .follow-button {
 
@@ -581,47 +480,42 @@ header {
 
     width: 100%;
 
-    border: none;
+    text-decoration: none;
 
-    background: #ffb000;
+    color: white;
 
-    color: #000;
+    background:
+        linear-gradient(
+            90deg,
+            #833ab4,
+            #fd1d1d,
+            #fcb045
+        );
 
-    padding: 14px;
+    padding: 13px;
 
     border-radius: 9px;
 
-    font-size: 13px;
-
     font-weight: 900;
 
-    text-decoration: none;
+    font-size: 13px;
 
     margin-bottom: 10px;
 
-    cursor: pointer;
-
 }
 
 
-.follow-button:hover {
+/* =========================
+   FOLLOWED BUTTON
+========================= */
 
-    background: #ffc226;
-
-}
-
-
-/* =========================================
-   I FOLLOWED BUTTON
-========================================= */
-
-.verify-follow {
+.followed-button {
 
     width: 100%;
 
     border: none;
 
-    background: #25262b;
+    background: #20b15a;
 
     color: white;
 
@@ -629,9 +523,9 @@ header {
 
     border-radius: 9px;
 
-    font-size: 13px;
-
     font-weight: 900;
+
+    font-size: 13px;
 
     cursor: pointer;
 
@@ -640,16 +534,9 @@ header {
 }
 
 
-.verify-follow:hover {
-
-    background: #33343a;
-
-}
-
-
-/* =========================================
-   CLOSE BUTTON
-========================================= */
+/* =========================
+   CLOSE
+========================= */
 
 .close {
 
@@ -657,11 +544,13 @@ header {
 
     border: none;
 
-    background: transparent;
+    background: #333;
 
-    color: #777;
+    color: white;
 
-    padding: 10px;
+    padding: 12px;
+
+    border-radius: 8px;
 
     font-weight: bold;
 
@@ -670,16 +559,9 @@ header {
 }
 
 
-.close:hover {
-
-    color: white;
-
-}
-
-
-/* =========================================
+/* =========================
    FOOTER
-========================================= */
+========================= */
 
 footer {
 
@@ -689,10 +571,9 @@ footer {
 
     font-size: 12px;
 
-    padding: 40px 10px;
+    padding: 45px 10px;
 
 }
-
 
 .footer-instagram {
 
@@ -704,18 +585,21 @@ footer {
 
     text-decoration: none;
 
+    font-weight: bold;
+
 }
 
 
-/* =========================================
+/* =========================
    MOBILE
-========================================= */
+========================= */
 
 @media (max-width: 500px) {
 
     .gallery {
 
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
 
         gap: 12px;
 
@@ -725,13 +609,11 @@ footer {
 
     }
 
-
     .card-info {
 
         padding: 9px;
 
     }
-
 
     .card-title {
 
@@ -739,10 +621,8 @@ footer {
 
     }
 
-
     .download,
-    .unlock,
-    .premium-download {
+    .unlock {
 
         padding: 11px 5px;
 
@@ -750,17 +630,9 @@ footer {
 
     }
 
-
     .main-title {
 
         font-size: 26px;
-
-    }
-
-
-    .small-title {
-
-        font-size: 10px;
 
     }
 
@@ -774,9 +646,9 @@ footer {
 <body>
 
 
-<!-- =========================================
+<!-- =========================
      HEADER
-========================================= -->
+========================= -->
 
 <header>
 
@@ -785,7 +657,6 @@ footer {
         ONLY BHAI THINGS BY
 
     </div>
-
 
     <div class="main-title">
 
@@ -797,9 +668,9 @@ footer {
 
 
 
-<!-- =========================================
+<!-- =========================
      INSTAGRAM
-========================================= -->
+========================= -->
 
 <div class="instagram">
 
@@ -816,9 +687,9 @@ footer {
 
 
 
-<!-- =========================================
-     FILTER MENU
-========================================= -->
+<!-- =========================
+     FILTER
+========================= -->
 
 <div class="menu">
 
@@ -844,21 +715,279 @@ footer {
 
 
 
-<!-- =========================================
+<!-- =========================
      GALLERY
-========================================= -->
+========================= -->
 
-<div
-    class="gallery"
-    id="gallery">
+<div class="gallery">
+
+
+    <!-- =================================
+         FREE 1
+    ================================= -->
+
+    <div class="card free">
+
+        <div class="card-image">
+
+            <img
+                src="wallpapers/90s_02.jpg"
+                alt="90s Wallpaper">
+
+        </div>
+
+
+        <div class="card-info">
+
+            <div class="card-title">
+
+                90s Wallpaper
+
+            </div>
+
+
+            <button
+                class="download"
+                onclick="downloadImage('wallpapers/90s_02.jpg')">
+
+                DOWNLOAD
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================
+         FREE 2
+    ================================= -->
+
+    <div class="card free">
+
+        <div class="card-image">
+
+            <img
+                src="wallpapers/KICK-HIGH-RESOLUTION.jpeg"
+                alt="KICK High Resolution">
+
+        </div>
+
+
+        <div class="card-info">
+
+            <div class="card-title">
+
+                KICK HIGH RESOLUTION
+
+            </div>
+
+
+            <button
+                class="download"
+                onclick="downloadImage('wallpapers/KICK-HIGH-RESOLUTION.jpeg')">
+
+                DOWNLOAD
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================
+         FREE 3
+    ================================= -->
+
+    <div class="card free">
+
+        <div class="card-image">
+
+            <img
+                src="wallpapers/PREMIUM-BUT-FREE-💀.jpeg"
+                alt="Premium But Free">
+
+        </div>
+
+
+        <div class="card-info">
+
+            <div class="card-title">
+
+                PREMIUM BUT FREE 💀
+
+            </div>
+
+
+            <button
+                class="download"
+                onclick="downloadImage('wallpapers/PREMIUM-BUT-FREE-💀.jpeg')">
+
+                DOWNLOAD
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================
+         FREE 4
+    ================================= -->
+
+    <div class="card free">
+
+        <div class="card-image">
+
+            <img
+                src="wallpapers/SALMAN-KHAN-90s-01.jpg"
+                alt="Salman Khan 90s">
+
+        </div>
+
+
+        <div class="card-info">
+
+            <div class="card-title">
+
+                SALMAN KHAN 90s
+
+            </div>
+
+
+            <button
+                class="download"
+                onclick="downloadImage('wallpapers/SALMAN-KHAN-90s-01.jpg')">
+
+                DOWNLOAD
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================
+         PREMIUM 1
+    ================================= -->
+
+    <div class="card premium">
+
+        <div class="premium-image">
+
+            <img
+                src="wallpapers/BHAI-4K-premium.jpeg"
+                alt="Bhai 4K Premium">
+
+            <div class="lock">
+
+                <div class="lock-icon">
+
+                    🔒
+
+                </div>
+
+                <div class="premium-text">
+
+                    FOLLOW TO UNLOCK
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="card-info">
+
+            <div class="card-title">
+
+                BHAI 4K PREMIUM
+
+            </div>
+
+
+            <button
+                class="unlock"
+                onclick="openFollow('wallpapers/BHAI-4K-premium.jpeg')">
+
+                FOLLOW TO UNLOCK
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================
+         PREMIUM 2
+    ================================= -->
+
+    <div class="card premium">
+
+        <div class="premium-image">
+
+            <img
+                src="wallpapers/SALMAN-KHAN.jpeg"
+                alt="Salman Khan Premium">
+
+            <div class="lock">
+
+                <div class="lock-icon">
+
+                    🔒
+
+                </div>
+
+                <div class="premium-text">
+
+                    FOLLOW TO UNLOCK
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="card-info">
+
+            <div class="card-title">
+
+                SALMAN KHAN PREMIUM
+
+            </div>
+
+
+            <button
+                class="unlock"
+                onclick="openFollow('wallpapers/SALMAN-KHAN.jpeg')">
+
+                FOLLOW TO UNLOCK
+
+            </button>
+
+        </div>
+
+    </div>
+
 
 </div>
 
 
 
-<!-- =========================================
+<!-- =========================
      FOLLOW MODAL
-========================================= -->
+========================= -->
 
 <div
     class="modal"
@@ -875,40 +1004,40 @@ footer {
         </h2>
 
 
-        <div class="follow-title">
-
-            FOLLOW TO UNLOCK
-
-        </div>
-
-
         <p>
 
             Premium wallpaper unlock karne ke liye
-            pehle hamare Instagram profile ko Follow karein.
+            pehle hamare Instagram profile ko
+            follow karein.
 
         </p>
 
 
+        <!-- INSTAGRAM -->
+
         <a
-            class="follow-button"
             href="https://www.instagram.com/onlybhaithings_/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+            class="follow-button">
 
             📸 FOLLOW @onlybhaithings_
 
         </a>
 
 
+        <!-- USER CONFIRMATION -->
+
         <button
-            class="verify-follow"
+            class="followed-button"
             onclick="unlockPremium()">
 
             ✅ I FOLLOWED — UNLOCK
 
         </button>
 
+
+        <!-- CLOSE -->
 
         <button
             class="close"
@@ -925,15 +1054,17 @@ footer {
 
 
 
-<!-- =========================================
+<!-- =========================
      FOOTER
-========================================= -->
+========================= -->
 
 <footer>
 
     © 2026 ONLY BHAI THINGS BY MUSTAKIN
 
+
     <br>
+
 
     <a
         href="https://www.instagram.com/onlybhaithings_/"
@@ -952,386 +1083,96 @@ footer {
 <script>
 
 
-/* =================================================
-   INSTAGRAM
-================================================= */
+/* =========================================
+   CURRENT PREMIUM IMAGE
+========================================= */
 
-const instagramProfile =
-    "https://www.instagram.com/onlybhaithings_/";
-
-
-/* =================================================
-   PREMIUM STATUS
-================================================= */
-
-let premiumUnlocked =
-    localStorage.getItem("premiumUnlocked") === "true";
+let selectedPremiumImage = "";
 
 
-/* =================================================
-   WALLPAPER LIST
 
-   IMPORTANT:
-   Filename exactly GitHub folder ke
-   filename jaisa hi hona chahiye.
-================================================= */
+/* =========================================
+   SHOW ALL
+========================================= */
 
-const wallpapers = [
+function showAll() {
 
+    document
+        .querySelectorAll(".free")
+        .forEach(function(card) {
 
-    /* =========================================
-       PREMIUM
-    ========================================= */
+            card.classList.remove("hidden");
 
-    {
-        name: "BHAI 4K PREMIUM",
-        file: "BHAI-4K-premium.jpeg",
-        premium: true
-    },
+        });
 
 
-    /*
-       NOTE:
+    document
+        .querySelectorAll(".premium")
+        .forEach(function(card) {
 
-       Screenshot mein abhi
-       "PREMIUM — 🗿 🔒.jpeg"
-       file visible nahi hai.
+            card.classList.remove("hidden");
 
-       Agar tumhare GitHub folder mein
-       ye file exact isi naam se hai,
-       to neeche wala object uncomment kar dena.
-    */
-
-    /*
-    {
-        name: "PREMIUM 🗿",
-        file: "PREMIUM — 🗿 🔒.jpeg",
-        premium: true
-    },
-    */
+        });
 
 
-    /* =========================================
-       FREE WALLPAPERS
-    ========================================= */
-
-    {
-        name: "90s Wallpaper",
-        file: "90s_02.jpg",
-        premium: false
-    },
+    document
+        .getElementById("allBtn")
+        .classList.add("active");
 
 
-    {
-        name: "KICK High Resolution",
-        file: "KICK-HIGH-RESOLUTION.jpeg",
-        premium: false
-    },
-
-
-    {
-        name: "Premium But Free 💀",
-        file: "PREMIUM-BUT-FREE-💀.jpeg",
-        premium: false
-    },
-
-
-    {
-        name: "Salman Khan 90s",
-        file: "SALMAN-KHAN-90s-01.jpg",
-        premium: false
-    },
-
-
-    /* =========================================
-       THIS WAS MISSING BEFORE
-    ========================================= */
-
-    {
-        name: "Salman Khan",
-        file: "SALMAN-KHAN.jpeg",
-        premium: false
-    }
-
-];
-
-
-/* =================================================
-   SAFE IMAGE PATH
-================================================= */
-
-function getImagePath(fileName) {
-
-    /*
-       encodeURIComponent filename ke spaces,
-       emoji aur special characters ko safely
-       URL mein convert karta hai.
-    */
-
-    return "wallpapers/" +
-           encodeURIComponent(fileName);
+    document
+        .getElementById("premiumBtn")
+        .classList.remove("active");
 
 }
 
 
-/* =================================================
-   CREATE GALLERY
-================================================= */
 
-function createGallery() {
+/* =========================================
+   SHOW PREMIUM
+========================================= */
 
+function showPremium() {
 
-    const gallery =
-        document.getElementById("gallery");
+    document
+        .querySelectorAll(".free")
+        .forEach(function(card) {
 
+            card.classList.add("hidden");
 
-    gallery.innerHTML = "";
+        });
 
 
-    wallpapers.forEach(function(wallpaper, index) {
+    document
+        .querySelectorAll(".premium")
+        .forEach(function(card) {
 
+            card.classList.remove("hidden");
 
-        const card =
-            document.createElement("div");
+        });
 
 
-        card.className =
-            "card " +
-            (
-                wallpaper.premium
-                    ? "premium"
-                    : "free"
-            );
+    document
+        .getElementById("premiumBtn")
+        .classList.add("active");
 
 
-        const imagePath =
-            getImagePath(wallpaper.file);
-
-
-        /* =====================================
-           PREMIUM CARD
-        ===================================== */
-
-        if (wallpaper.premium) {
-
-
-            if (premiumUnlocked) {
-
-
-                card.innerHTML = `
-
-                    <div
-                        class="premium-image unlocked">
-
-                        <img
-                            src="${imagePath}"
-                            alt="${wallpaper.name}">
-
-                        <div class="lock">
-
-                            <div class="lock-icon">
-                                🔓
-                            </div>
-
-                            <div class="premium-text">
-                                PREMIUM UNLOCKED
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="card-info">
-
-                        <div class="card-title">
-                            ${wallpaper.name}
-                        </div>
-
-
-                        <button
-                            class="premium-download"
-                            onclick="downloadImage('${imagePath}', '${escapeFileName(wallpaper.file)}')">
-
-                            DOWNLOAD PREMIUM
-
-                        </button>
-
-                    </div>
-
-                `;
-
-
-            } else {
-
-
-                card.innerHTML = `
-
-                    <div
-                        class="premium-image">
-
-                        <img
-                            src="${imagePath}"
-                            alt="${wallpaper.name}">
-
-                        <div class="lock">
-
-                            <div class="lock-icon">
-                                🔒
-                            </div>
-
-                            <div class="premium-text">
-                                PREMIUM WALLPAPER
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="card-info">
-
-                        <div class="card-title">
-                            ${wallpaper.name}
-                        </div>
-
-
-                        <button
-                            class="unlock"
-                            onclick="openFollow()">
-
-                            📸 FOLLOW TO UNLOCK
-
-                        </button>
-
-                    </div>
-
-                `;
-
-            }
-
-        }
-
-
-        /* =====================================
-           FREE CARD
-        ===================================== */
-
-        else {
-
-
-            card.innerHTML = `
-
-                <div class="card-image">
-
-                    <img
-                        src="${imagePath}"
-                        alt="${wallpaper.name}"
-                        loading="lazy"
-                        onerror="imageError(this, '${escapeFileName(wallpaper.file)}')">
-
-                </div>
-
-
-                <div class="card-info">
-
-                    <div class="card-title">
-                        ${wallpaper.name}
-                    </div>
-
-
-                    <button
-                        class="download"
-                        onclick="downloadImage('${imagePath}', '${escapeFileName(wallpaper.file)}')">
-
-                        DOWNLOAD
-
-                    </button>
-
-                </div>
-
-            `;
-
-        }
-
-
-        gallery.appendChild(card);
-
-    });
+    document
+        .getElementById("allBtn")
+        .classList.remove("active");
 
 }
 
 
-/* =================================================
-   ESCAPE FILE NAME
-================================================= */
 
-function escapeFileName(fileName) {
+/* =========================================
+   OPEN FOLLOW
+========================================= */
 
-    return fileName
-        .replace(/\\/g, "\\\\")
-        .replace(/'/g, "\\'")
-        .replace(/"/g, '\\"');
+function openFollow(image) {
 
-}
+    selectedPremiumImage = image;
 
-
-/* =================================================
-   IMAGE ERROR
-================================================= */
-
-function imageError(image, fileName) {
-
-    console.log(
-        "Image not found:",
-        fileName
-    );
-
-    image.style.display = "none";
-
-
-    const parent =
-        image.parentElement;
-
-
-    parent.style.display = "flex";
-
-    parent.style.alignItems =
-        "center";
-
-    parent.style.justifyContent =
-        "center";
-
-    parent.style.color =
-        "#777";
-
-    parent.innerHTML = `
-
-        <div
-            style="
-                text-align:center;
-                padding:20px;
-                font-size:12px;
-            ">
-
-            Image not found
-
-            <br><br>
-
-            <b>${fileName}</b>
-
-        </div>
-
-    `;
-
-}
-
-
-/* =================================================
-   OPEN FOLLOW MODAL
-================================================= */
-
-function openFollow() {
 
     document
         .getElementById("followModal")
@@ -1340,9 +1181,10 @@ function openFollow() {
 }
 
 
-/* =================================================
-   CLOSE FOLLOW MODAL
-================================================= */
+
+/* =========================================
+   CLOSE FOLLOW
+========================================= */
 
 function closeFollow() {
 
@@ -1353,54 +1195,90 @@ function closeFollow() {
 }
 
 
-/* =================================================
+
+/* =========================================
    UNLOCK PREMIUM
-================================================= */
+========================================= */
 
 function unlockPremium() {
 
+    if (!selectedPremiumImage) {
 
-    /*
-       GitHub Pages Instagram follow ko
-       automatically verify nahi karta.
+        return;
 
-       User ke confirmation ke baad
-       browser mein unlock save hota hai.
-    */
-
-
-    premiumUnlocked = true;
-
-
-    localStorage.setItem(
-        "premiumUnlocked",
-        "true"
-    );
+    }
 
 
     closeFollow();
 
 
-    createGallery();
+    /*
+       Download after user confirms
+       they followed Instagram.
+    */
 
+    setTimeout(function() {
 
-    alert(
-        "🎉 PREMIUM UNLOCKED!\n\n" +
-        "Ab premium wallpaper download kar sakte ho."
-    );
+        downloadImage(selectedPremiumImage);
+
+    }, 300);
 
 }
 
 
-/* =================================================
+
+/* =========================================
    DOWNLOAD
-================================================= */
+========================================= */
 
-function downloadImage(
-    imagePath,
-    fileName
-) {
-
+function downloadImage(image) {
 
     const link =
-     
+        document.createElement("a");
+
+
+    link.href = image;
+
+    link.download = "";
+
+
+    document
+        .body
+        .appendChild(link);
+
+
+    link.click();
+
+
+    document
+        .body
+        .removeChild(link);
+
+}
+
+
+
+/* =========================================
+   CLOSE MODAL OUTSIDE
+========================================= */
+
+window.onclick = function(event) {
+
+    const modal =
+        document.getElementById("followModal");
+
+
+    if (event.target === modal) {
+
+        modal.style.display = "none";
+
+    }
+
+};
+
+</script>
+
+
+</body>
+
+      </html>
