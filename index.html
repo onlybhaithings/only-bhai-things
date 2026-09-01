@@ -22,9 +22,9 @@
 
 <style>
 
-/* =====================================
+/* =========================================
    RESET
-===================================== */
+========================================= */
 
 * {
     box-sizing: border-box;
@@ -33,211 +33,323 @@
 }
 
 
-/* =====================================
+/* =========================================
    BODY
-===================================== */
+========================================= */
 
 body {
+
     background: #050505;
+
     color: #ffffff;
+
     font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
 }
 
 
-/* =====================================
+/* =========================================
    HEADER
-===================================== */
+========================================= */
 
 header {
+
     text-align: center;
+
     padding: 32px 15px 25px;
+
     border-bottom: 1px solid #222;
+
 }
+
 
 .small-title {
+
     font-size: 12px;
+
     letter-spacing: 3px;
+
     font-weight: 600;
+
     color: #aaa;
+
     margin-bottom: 8px;
+
 }
+
 
 .main-title {
+
     font-size: 29px;
+
     font-weight: 900;
+
     letter-spacing: 2px;
+
 }
 
 
-/* =====================================
-   INSTAGRAM
-===================================== */
+/* =========================================
+   INSTAGRAM TOP BUTTON
+========================================= */
 
 .instagram {
+
     text-align: center;
+
     padding: 15px 10px 5px;
+
 }
+
 
 .instagram a {
+
     display: inline-block;
+
     color: #aaa;
+
     text-decoration: none;
+
     font-size: 13px;
+
     font-weight: bold;
+
     border: 1px solid #292a2e;
+
     background: #151619;
-    padding: 9px 18px;
-    border-radius: 20px;
+
+    padding: 10px 19px;
+
+    border-radius: 22px;
+
+    transition: 0.2s;
+
 }
+
 
 .instagram a:hover {
+
     color: white;
+
     background: #202126;
+
 }
 
 
-/* =====================================
+/* =========================================
    MENU
-===================================== */
+========================================= */
 
 .menu {
+
     display: flex;
+
     justify-content: center;
+
     gap: 12px;
+
     padding: 20px 10px;
+
 }
+
 
 .menu button {
+
     border: none;
+
     background: #202126;
+
     color: white;
+
     padding: 11px 25px;
+
     border-radius: 30px;
+
     font-weight: bold;
+
     cursor: pointer;
+
 }
+
 
 .menu button.active {
+
     background: white;
+
     color: black;
+
 }
 
 
-/* =====================================
+/* =========================================
    GALLERY
-===================================== */
+========================================= */
 
 .gallery {
+
     width: 100%;
+
     max-width: 1100px;
+
     margin: auto;
+
     padding: 10px 15px 35px;
 
     display: grid;
 
-    grid-template-columns:
-        repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     gap: 18px;
+
 }
 
 
-/* =====================================
+/* =========================================
    CARD
-===================================== */
+========================================= */
 
 .card {
+
     background: #17181c;
+
     border-radius: 15px;
+
     overflow: hidden;
+
     border: 1px solid #292a2e;
+
 }
 
 
-/* =====================================
+/* =========================================
    FREE IMAGE
-===================================== */
+========================================= */
 
 .card-image {
+
     width: 100%;
+
     aspect-ratio: 9 / 16;
+
     overflow: hidden;
+
     background: #111;
+
 }
+
 
 .card-image img {
+
     width: 100%;
+
     height: 100%;
+
     display: block;
+
     object-fit: cover;
+
 }
 
 
-/* =====================================
+/* =========================================
    CARD INFO
-===================================== */
+========================================= */
 
 .card-info {
+
     padding: 12px;
+
 }
+
 
 .card-title {
+
     font-size: 13px;
+
     font-weight: bold;
+
     margin-bottom: 10px;
+
     line-height: 1.3;
+
 }
 
 
-/* =====================================
-   FREE DOWNLOAD
-===================================== */
+/* =========================================
+   FREE DOWNLOAD BUTTON
+========================================= */
 
 .download {
+
     width: 100%;
+
     border: none;
+
     background: #f10b16;
+
     color: white;
+
     padding: 12px;
+
     border-radius: 8px;
+
     font-weight: bold;
+
     cursor: pointer;
+
 }
+
 
 .download:hover {
+
     background: #ff1823;
+
 }
 
 
-/* =====================================
+/* =========================================
    PREMIUM IMAGE
-===================================== */
+========================================= */
 
 .premium-image {
+
     position: relative;
+
     width: 100%;
+
     aspect-ratio: 9 / 16;
+
     overflow: hidden;
+
+    background: #111;
+
 }
 
+
 .premium-image img {
+
     width: 100%;
+
     height: 100%;
+
     object-fit: cover;
 
-    filter: blur(8px);
+    filter: blur(9px);
 
-    transform: scale(1.07);
+    transform: scale(1.08);
 
     transition:
         filter 0.4s ease,
         transform 0.4s ease;
+
 }
 
 
-/* =====================================
+/* =========================================
    PREMIUM UNLOCKED
-===================================== */
+========================================= */
 
 .premium-image.unlocked img {
 
@@ -248,42 +360,50 @@ header {
 }
 
 
-/* =====================================
-   PREMIUM LOCK
-===================================== */
+/* =========================================
+   PREMIUM LOCK OVERLAY
+========================================= */
 
 .lock {
+
     position: absolute;
+
     inset: 0;
 
     display: flex;
 
     justify-content: center;
+
     align-items: center;
 
     flex-direction: column;
 
-    background:
-        rgba(0,0,0,0.40);
+    background: rgba(0,0,0,0.43);
 
-    transition:
-        opacity 0.3s ease;
+    transition: opacity 0.35s ease;
+
 }
 
 
 .lock-icon {
+
     font-size: 43px;
+
     margin-bottom: 8px;
+
 }
 
 
 .premium-text {
+
     font-size: 13px;
+
     font-weight: 900;
+
 }
 
 
-/* Hide lock after unlock */
+/* Remove lock after unlock */
 
 .premium-image.unlocked .lock {
 
@@ -294,11 +414,12 @@ header {
 }
 
 
-/* =====================================
-   PREMIUM BUTTON
-===================================== */
+/* =========================================
+   PREMIUM UNLOCK BUTTON
+========================================= */
 
 .unlock {
+
     width: 100%;
 
     border: none;
@@ -314,17 +435,20 @@ header {
     font-weight: 900;
 
     cursor: pointer;
+
 }
 
 
 .unlock:hover {
+
     background: #ffc226;
+
 }
 
 
-/* =====================================
+/* =========================================
    PREMIUM DOWNLOAD
-===================================== */
+========================================= */
 
 .premium-download {
 
@@ -344,7 +468,6 @@ header {
 
     cursor: pointer;
 
-    display: none;
 }
 
 
@@ -355,18 +478,20 @@ header {
 }
 
 
-/* =====================================
+/* =========================================
    HIDDEN
-===================================== */
+========================================= */
 
 .hidden {
+
     display: none !important;
+
 }
 
 
-/* =====================================
+/* =========================================
    FOLLOW MODAL
-===================================== */
+========================================= */
 
 .modal {
 
@@ -376,8 +501,7 @@ header {
 
     inset: 0;
 
-    background:
-        rgba(0,0,0,0.92);
+    background: rgba(0,0,0,0.92);
 
     z-index: 9999;
 
@@ -386,6 +510,7 @@ header {
     align-items: center;
 
     padding: 20px;
+
 }
 
 
@@ -407,6 +532,7 @@ header {
 
     box-shadow:
         0 20px 60px rgba(0,0,0,0.7);
+
 }
 
 
@@ -419,11 +545,11 @@ header {
 }
 
 
-.follow-price {
+.follow-title {
 
     color: #ffb000;
 
-    font-size: 20px;
+    font-size: 21px;
 
     font-weight: 900;
 
@@ -445,9 +571,9 @@ header {
 }
 
 
-/* =====================================
-   FOLLOW BUTTON
-===================================== */
+/* =========================================
+   FOLLOW INSTAGRAM BUTTON
+========================================= */
 
 .follow-button {
 
@@ -474,6 +600,7 @@ header {
     margin-bottom: 10px;
 
     cursor: pointer;
+
 }
 
 
@@ -484,9 +611,9 @@ header {
 }
 
 
-/* =====================================
-   VERIFY BUTTON
-===================================== */
+/* =========================================
+   I FOLLOWED BUTTON
+========================================= */
 
 .verify-follow {
 
@@ -509,6 +636,7 @@ header {
     cursor: pointer;
 
     margin-bottom: 10px;
+
 }
 
 
@@ -519,9 +647,9 @@ header {
 }
 
 
-/* =====================================
-   CLOSE
-===================================== */
+/* =========================================
+   CLOSE BUTTON
+========================================= */
 
 .close {
 
@@ -538,6 +666,7 @@ header {
     font-weight: bold;
 
     cursor: pointer;
+
 }
 
 
@@ -548,9 +677,9 @@ header {
 }
 
 
-/* =====================================
+/* =========================================
    FOOTER
-===================================== */
+========================================= */
 
 footer {
 
@@ -578,16 +707,15 @@ footer {
 }
 
 
-/* =====================================
+/* =========================================
    MOBILE
-===================================== */
+========================================= */
 
 @media (max-width: 500px) {
 
     .gallery {
 
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
 
         gap: 12px;
 
@@ -646,26 +774,32 @@ footer {
 <body>
 
 
-<!-- =====================================
+<!-- =========================================
      HEADER
-===================================== -->
+========================================= -->
 
 <header>
 
     <div class="small-title">
+
         ONLY BHAI THINGS BY
+
     </div>
 
+
     <div class="main-title">
+
         MUSTAKIN
+
     </div>
 
 </header>
 
 
-<!-- =====================================
+
+<!-- =========================================
      INSTAGRAM
-===================================== -->
+========================================= -->
 
 <div class="instagram">
 
@@ -681,9 +815,10 @@ footer {
 </div>
 
 
-<!-- =====================================
-     MENU
-===================================== -->
+
+<!-- =========================================
+     FILTER MENU
+========================================= -->
 
 <div class="menu">
 
@@ -708,19 +843,22 @@ footer {
 </div>
 
 
-<!-- =====================================
+
+<!-- =========================================
      GALLERY
-===================================== -->
+========================================= -->
 
 <div
     class="gallery"
     id="gallery">
+
 </div>
 
 
-<!-- =====================================
+
+<!-- =========================================
      FOLLOW MODAL
-===================================== -->
+========================================= -->
 
 <div
     class="modal"
@@ -731,12 +869,16 @@ footer {
 
 
         <h2>
+
             🔒 PREMIUM WALLPAPER
+
         </h2>
 
 
-        <div class="follow-price">
+        <div class="follow-title">
+
             FOLLOW TO UNLOCK
+
         </div>
 
 
@@ -748,8 +890,6 @@ footer {
         </p>
 
 
-        <!-- INSTAGRAM -->
-
         <a
             class="follow-button"
             href="https://www.instagram.com/onlybhaithings_/"
@@ -760,8 +900,6 @@ footer {
 
         </a>
 
-
-        <!-- UNLOCK -->
 
         <button
             class="verify-follow"
@@ -786,9 +924,10 @@ footer {
 </div>
 
 
-<!-- =====================================
+
+<!-- =========================================
      FOOTER
-===================================== -->
+========================================= -->
 
 <footer>
 
@@ -809,42 +948,40 @@ footer {
 </footer>
 
 
+
 <script>
 
 
-/* ==================================================
-   INSTAGRAM PROFILE
-================================================== */
+/* =================================================
+   INSTAGRAM
+================================================= */
 
 const instagramProfile =
     "https://www.instagram.com/onlybhaithings_/";
 
 
-/* ==================================================
-   PREMIUM UNLOCK STATUS
-================================================== */
-
-/*
-   localStorage use kiya gaya hai.
-
-   Ek baar user unlock karega,
-   browser us device par unlock status
-   remember karega.
-*/
+/* =================================================
+   PREMIUM STATUS
+================================================= */
 
 let premiumUnlocked =
     localStorage.getItem("premiumUnlocked") === "true";
 
 
-/* ==================================================
+/* =================================================
    WALLPAPER LIST
-================================================== */
+
+   IMPORTANT:
+   Filename exactly GitHub folder ke
+   filename jaisa hi hona chahiye.
+================================================= */
 
 const wallpapers = [
 
-    /* =========================
+
+    /* =========================================
        PREMIUM
-    ========================= */
+    ========================================= */
 
     {
         name: "BHAI 4K PREMIUM",
@@ -853,16 +990,30 @@ const wallpapers = [
     },
 
 
+    /*
+       NOTE:
+
+       Screenshot mein abhi
+       "PREMIUM — 🗿 🔒.jpeg"
+       file visible nahi hai.
+
+       Agar tumhare GitHub folder mein
+       ye file exact isi naam se hai,
+       to neeche wala object uncomment kar dena.
+    */
+
+    /*
     {
-        name: "SALMAN-KHAN",
+        name: "PREMIUM 🗿",
         file: "PREMIUM — 🗿 🔒.jpeg",
         premium: true
     },
+    */
 
 
-    /* =========================
-       FREE
-    ========================= */
+    /* =========================================
+       FREE WALLPAPERS
+    ========================================= */
 
     {
         name: "90s Wallpaper",
@@ -889,16 +1040,46 @@ const wallpapers = [
         name: "Salman Khan 90s",
         file: "SALMAN-KHAN-90s-01.jpg",
         premium: false
+    },
+
+
+    /* =========================================
+       THIS WAS MISSING BEFORE
+    ========================================= */
+
+    {
+        name: "Salman Khan",
+        file: "SALMAN-KHAN.jpeg",
+        premium: false
     }
 
 ];
 
 
-/* ==================================================
+/* =================================================
+   SAFE IMAGE PATH
+================================================= */
+
+function getImagePath(fileName) {
+
+    /*
+       encodeURIComponent filename ke spaces,
+       emoji aur special characters ko safely
+       URL mein convert karta hai.
+    */
+
+    return "wallpapers/" +
+           encodeURIComponent(fileName);
+
+}
+
+
+/* =================================================
    CREATE GALLERY
-================================================== */
+================================================= */
 
 function createGallery() {
+
 
     const gallery =
         document.getElementById("gallery");
@@ -916,101 +1097,125 @@ function createGallery() {
 
         card.className =
             "card " +
-            (wallpaper.premium
-                ? "premium"
-                : "free");
+            (
+                wallpaper.premium
+                    ? "premium"
+                    : "free"
+            );
 
 
         const imagePath =
-            "wallpapers/" +
-            encodeURI(wallpaper.file);
+            getImagePath(wallpaper.file);
 
 
-        /* =================================
-           PREMIUM
-        ================================= */
+        /* =====================================
+           PREMIUM CARD
+        ===================================== */
 
         if (wallpaper.premium) {
 
 
-            const unlockedClass =
-                premiumUnlocked
-                    ? "unlocked"
-                    : "";
+            if (premiumUnlocked) {
 
 
-            const buttonHTML =
-                premiumUnlocked
+                card.innerHTML = `
 
-                ?
+                    <div
+                        class="premium-image unlocked">
 
-                `
-                <button
-                    class="premium-download"
-                    style="display:block;"
-                    onclick="downloadImage('${imagePath}', '${wallpaper.file}')">
+                        <img
+                            src="${imagePath}"
+                            alt="${wallpaper.name}">
 
-                    DOWNLOAD PREMIUM
+                        <div class="lock">
 
-                </button>
-                `
+                            <div class="lock-icon">
+                                🔓
+                            </div>
 
-                :
+                            <div class="premium-text">
+                                PREMIUM UNLOCKED
+                            </div>
 
-                `
-                <button
-                    class="unlock"
-                    onclick="openFollow(${index})">
+                        </div>
 
-                    📸 FOLLOW TO UNLOCK
+                    </div>
 
-                </button>
+
+                    <div class="card-info">
+
+                        <div class="card-title">
+                            ${wallpaper.name}
+                        </div>
+
+
+                        <button
+                            class="premium-download"
+                            onclick="downloadImage('${imagePath}', '${escapeFileName(wallpaper.file)}')">
+
+                            DOWNLOAD PREMIUM
+
+                        </button>
+
+                    </div>
+
                 `;
 
 
-            card.innerHTML = `
+            } else {
 
-                <div
-                    class="premium-image ${unlockedClass}"
-                    id="premiumImage${index}">
 
-                    <img
-                        src="${imagePath}"
-                        alt="${wallpaper.name}">
+                card.innerHTML = `
 
-                    <div class="lock">
+                    <div
+                        class="premium-image">
 
-                        <div class="lock-icon">
-                            🔒
-                        </div>
+                        <img
+                            src="${imagePath}"
+                            alt="${wallpaper.name}">
 
-                        <div class="premium-text">
-                            PREMIUM WALLPAPER
+                        <div class="lock">
+
+                            <div class="lock-icon">
+                                🔒
+                            </div>
+
+                            <div class="premium-text">
+                                PREMIUM WALLPAPER
+                            </div>
+
                         </div>
 
                     </div>
 
-                </div>
+
+                    <div class="card-info">
+
+                        <div class="card-title">
+                            ${wallpaper.name}
+                        </div>
 
 
-                <div class="card-info">
+                        <button
+                            class="unlock"
+                            onclick="openFollow()">
 
-                    <div class="card-title">
-                        ${wallpaper.name}
+                            📸 FOLLOW TO UNLOCK
+
+                        </button>
+
                     </div>
 
-                    ${buttonHTML}
+                `;
 
-                </div>
-
-            `;
+            }
 
         }
 
 
-        /* =================================
-           FREE
-        ================================= */
+        /* =====================================
+           FREE CARD
+        ===================================== */
 
         else {
 
@@ -1021,7 +1226,9 @@ function createGallery() {
 
                     <img
                         src="${imagePath}"
-                        alt="${wallpaper.name}">
+                        alt="${wallpaper.name}"
+                        loading="lazy"
+                        onerror="imageError(this, '${escapeFileName(wallpaper.file)}')">
 
                 </div>
 
@@ -1035,7 +1242,7 @@ function createGallery() {
 
                     <button
                         class="download"
-                        onclick="downloadImage('${imagePath}', '${wallpaper.file}')">
+                        onclick="downloadImage('${imagePath}', '${escapeFileName(wallpaper.file)}')">
 
                         DOWNLOAD
 
@@ -1055,20 +1262,76 @@ function createGallery() {
 }
 
 
-/* ==================================================
-   CURRENT PREMIUM INDEX
-================================================== */
+/* =================================================
+   ESCAPE FILE NAME
+================================================= */
 
-let selectedPremium = null;
+function escapeFileName(fileName) {
+
+    return fileName
+        .replace(/\\/g, "\\\\")
+        .replace(/'/g, "\\'")
+        .replace(/"/g, '\\"');
+
+}
 
 
-/* ==================================================
+/* =================================================
+   IMAGE ERROR
+================================================= */
+
+function imageError(image, fileName) {
+
+    console.log(
+        "Image not found:",
+        fileName
+    );
+
+    image.style.display = "none";
+
+
+    const parent =
+        image.parentElement;
+
+
+    parent.style.display = "flex";
+
+    parent.style.alignItems =
+        "center";
+
+    parent.style.justifyContent =
+        "center";
+
+    parent.style.color =
+        "#777";
+
+    parent.innerHTML = `
+
+        <div
+            style="
+                text-align:center;
+                padding:20px;
+                font-size:12px;
+            ">
+
+            Image not found
+
+            <br><br>
+
+            <b>${fileName}</b>
+
+        </div>
+
+    `;
+
+}
+
+
+/* =================================================
    OPEN FOLLOW MODAL
-================================================== */
+================================================= */
 
-function openFollow(index) {
-
-    selectedPremium = index;
+function openFollow() {
 
     document
         .getElementById("followModal")
@@ -1077,9 +1340,9 @@ function openFollow(index) {
 }
 
 
-/* ==================================================
+/* =================================================
    CLOSE FOLLOW MODAL
-================================================== */
+================================================= */
 
 function closeFollow() {
 
@@ -1090,21 +1353,19 @@ function closeFollow() {
 }
 
 
-/* ==================================================
+/* =================================================
    UNLOCK PREMIUM
-================================================== */
+================================================= */
 
 function unlockPremium() {
 
 
     /*
-       IMPORTANT:
-
        GitHub Pages Instagram follow ko
-       automatically verify nahi kar sakta.
+       automatically verify nahi karta.
 
-       Ye button user ke confirmation par
-       premium unlock karta hai.
+       User ke confirmation ke baad
+       browser mein unlock save hota hai.
     */
 
 
@@ -1124,151 +1385,22 @@ function unlockPremium() {
 
 
     alert(
-        "🎉 Premium Unlocked!\n\n" +
-        "Ab dono premium wallpapers open aur download kar sakte hain."
+        "🎉 PREMIUM UNLOCKED!\n\n" +
+        "Ab premium wallpaper download kar sakte ho."
     );
 
 }
 
 
-/* ==================================================
-   DOWNLOAD IMAGE
-================================================== */
+/* =================================================
+   DOWNLOAD
+================================================= */
 
-function downloadImage(imagePath, fileName) {
+function downloadImage(
+    imagePath,
+    fileName
+) {
 
 
     const link =
-        document.createElement("a");
-
-
-    link.href = imagePath;
-
-
-    link.download = fileName;
-
-
-    link.target = "_blank";
-
-
-    document
-        .body
-        .appendChild(link);
-
-
-    link.click();
-
-
-    document
-        .body
-        .removeChild(link);
-
-}
-
-
-/* ==================================================
-   SHOW ALL
-================================================== */
-
-function showAll() {
-
-
-    document
-        .querySelectorAll(".free")
-        .forEach(function(card) {
-
-            card.classList.remove("hidden");
-
-        });
-
-
-    document
-        .querySelectorAll(".premium")
-        .forEach(function(card) {
-
-            card.classList.remove("hidden");
-
-        });
-
-
-    document
-        .getElementById("allBtn")
-        .classList.add("active");
-
-
-    document
-        .getElementById("premiumBtn")
-        .classList.remove("active");
-
-}
-
-
-/* ==================================================
-   SHOW PREMIUM
-================================================== */
-
-function showPremium() {
-
-
-    document
-        .querySelectorAll(".free")
-        .forEach(function(card) {
-
-            card.classList.add("hidden");
-
-        });
-
-
-    document
-        .querySelectorAll(".premium")
-        .forEach(function(card) {
-
-            card.classList.remove("hidden");
-
-        });
-
-
-    document
-        .getElementById("premiumBtn")
-        .classList.add("active");
-
-
-    document
-        .getElementById("allBtn")
-        .classList.remove("active");
-
-}
-
-
-/* ==================================================
-   CLOSE MODAL OUTSIDE
-================================================== */
-
-window.onclick = function(event) {
-
-
-    const modal =
-        document.getElementById("followModal");
-
-
-    if (event.target === modal) {
-
-        closeFollow();
-
-    }
-
-};
-
-
-/* ==================================================
-   START
-================================================== */
-
-createGallery();
-
-</script>
-
-
-</body>
-
-</html>
+     
