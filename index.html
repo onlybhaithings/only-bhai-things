@@ -1,199 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ONLY BHAI THINGS</title>
+<title>ONLY BHAI THINGS</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    body {
-      background: #08090b;
-      color: white;
-      font-family: Arial, sans-serif;
-    }
+body {
+  margin: 0;
+  background: #080808;
+  color: white;
+  font-family: Arial, sans-serif;
+}
 
-    header {
-      padding: 22px 18px;
-      text-align: center;
-      border-bottom: 1px solid #25262a;
-    }
+header {
+  text-align: center;
+  padding: 30px 15px 20px;
+  border-bottom: 1px solid #222;
+}
 
-    header h1 {
-      font-size: 26px;
-      letter-spacing: 2px;
-    }
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 900;
+}
 
-    header p {
-      color: #999;
-      margin-top: 7px;
-      font-size: 14px;
-    }
+header p {
+  color: #999;
+  margin: 8px 0 0;
+}
 
-    .hero {
-      padding: 35px 18px;
-      text-align: center;
-    }
+.categories {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 18px 12px;
+  justify-content: center;
+}
 
-    .hero h2 {
-      font-size: 30px;
-      margin-bottom: 10px;
-    }
+.categories button {
+  background: #202126;
+  color: white;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 16px;
+  white-space: nowrap;
+}
 
-    .hero p {
-      color: #aaa;
-      line-height: 1.5;
-    }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 12px;
+  max-width: 1000px;
+  margin: auto;
+}
 
-    .categories {
-      display: flex;
-      gap: 10px;
-      overflow-x: auto;
-      padding: 5px 15px 20px;
-    }
+.card {
+  background: #17181c;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #292a2e;
+}
 
-    .categories button {
-      background: #191b20;
-      color: white;
-      border: 1px solid #303238;
-      border-radius: 20px;
-      padding: 10px 16px;
-      white-space: nowrap;
-    }
+.card img {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  display: block;
+}
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      padding: 10px;
-    }
+.info {
+  padding: 10px;
+}
 
-    .card {
-      background: #15171b;
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid #27292e;
-    }
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
 
-    .wallpaper {
-      height: 250px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-      font-size: 20px;
-      font-weight: bold;
-      background: linear-gradient(145deg, #171717, #4a0000);
-    }
+.download {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: #ed0712;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 13px;
+}
 
-    .card-info {
-      padding: 12px;
-    }
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #aaa;
+}
 
-    .card-info h3 {
-      font-size: 15px;
-      margin-bottom: 10px;
-    }
+footer {
+  text-align: center;
+  color: #777;
+  padding: 40px 10px;
+  font-size: 13px;
+}
 
-    .download {
-      display: block;
-      text-align: center;
-      background: #e50914;
-      color: white;
-      text-decoration: none;
-      padding: 9px;
-      border-radius: 7px;
-      font-size: 13px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 35px 15px;
-      margin-top: 20px;
-      border-top: 1px solid #25262a;
-      color: #777;
-      font-size: 13px;
-    }
-
-    @media (min-width: 700px) {
-      .gallery {
-        grid-template-columns: repeat(4, 1fr);
-        max-width: 1100px;
-        margin: auto;
-      }
-    }
-  </style>
+@media (min-width: 700px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>ONLY BHAI THINGS</h1>
-    <p>HD Wallpapers • Images • More</p>
-  </header>
+<header>
+  <h1>ONLY BHAI THINGS 🔥</h1>
+  <p>HD Wallpapers • Images • More</p>
+</header>
 
-  <section class="hero">
-    <h2>Welcome Bhai 🔥</h2>
-    <p>
-      High quality wallpapers and images.
-      Download your favourite ones.
-    </p>
-  </section>
+<div class="categories">
+  <button onclick="showAll()">All</button>
+  <button onclick="filterWallpapers('4k')">4K</button>
+  <button onclick="filterWallpapers('bollywood')">Bollywood</button>
+  <button onclick="filterWallpapers('attitude')">Attitude</button>
+  <button onclick="filterWallpapers('hd')">HD</button>
+</div>
 
-  <div class="categories">
-    <button>All</button>
-    <button>4K Wallpapers</button>
-    <button>Bollywood</button>
-    <button>Attitude</button>
-    <button>HD Images</button>
-  </div>
+<div id="gallery" class="gallery">
+  <div class="loading">Loading wallpapers... 🔥</div>
+</div>
 
-  <section class="gallery">
+<footer>
+  © 2026 ONLY BHAI THINGS
+</footer>
 
-    <div class="card">
-      <div class="wallpaper">ONLY<br>BHAI<br>THINGS 🔥</div>
-      <div class="card-info">
-        <h3>Only Bhai Wallpaper</h3>
-        <a class="download" href="#" download>Download</a>
+<script>
+
+const USERNAME = "onlybhaithings";
+const REPOSITORY = "only-bhai-things";
+const FOLDER = "wallpapers";
+
+let allWallpapers = [];
+
+async function loadWallpapers() {
+
+  const gallery = document.getElementById("gallery");
+
+  try {
+
+    const api =
+      `https://api.github.com/repos/${USERNAME}/${REPOSITORY}/contents/${FOLDER}`;
+
+    const response = await fetch(api);
+
+    if (!response.ok) {
+      throw new Error("Could not load wallpapers");
+    }
+
+    const files = await response.json();
+
+    allWallpapers = files.filter(file =>
+      file.type === "file" &&
+      /\.(jpg|jpeg|png|webp|gif)$/i.test(file.name)
+    );
+
+    displayWallpapers(allWallpapers);
+
+  } catch (error) {
+
+    gallery.innerHTML =
+      `<div class="loading">
+        Wallpapers load nahi ho paaye 😕<br>
+        Thodi der baad refresh karo.
+      </div>`;
+
+  }
+}
+
+function displayWallpapers(files) {
+
+  const gallery = document.getElementById("gallery");
+
+  if (files.length === 0) {
+
+    gallery.innerHTML =
+      `<div class="loading">
+        Abhi koi wallpaper nahi hai 📸
+      </div>`;
+
+    return;
+  }
+
+  gallery.innerHTML = "";
+
+  files.reverse().forEach(file => {
+
+    const imageURL =
+      `https://raw.githubusercontent.com/${USERNAME}/${REPOSITORY}/main/${FOLDER}/${encodeURIComponent(file.name)}`;
+
+    const card = document.createElement("div");
+
+    card.className = "card";
+
+    card.innerHTML = `
+      <img
+        src="${imageURL}"
+        alt="${file.name}"
+        loading="lazy"
+      >
+
+      <div class="info">
+
+        <div class="title">
+          ${file.name.replace(/\.[^/.]+$/, "")}
+        </div>
+
+        <a
+          class="download"
+          href="${imageURL}"
+          download
+          target="_blank"
+        >
+          Download
+        </a>
+
       </div>
-    </div>
+    `;
 
-    <div class="card">
-      <div class="wallpaper">4K<br>WALLPAPER</div>
-      <div class="card-info">
-        <h3>4K Mobile Wallpaper</h3>
-        <a class="download" href="#" download>Download</a>
-      </div>
-    </div>
+    gallery.appendChild(card);
 
-    <div class="card">
-      <div class="wallpaper">BHAI<br>ATTITUDE 😎</div>
-      <div class="card-info">
-        <h3>Attitude Wallpaper</h3>
-        <a class="download" href="#" download>Download</a>
-      </div>
-    </div>
+  });
 
-    <div class="card">
-      <div class="wallpaper">HD<br>IMAGE 🔥</div>
-      <div class="card-info">
-        <h3>HD Image</h3>
-        <a class="download" href="#" download>Download</a>
-      </div>
-    </div>
+}
 
-  </section>
+function showAll() {
+  displayWallpapers(allWallpapers);
+}
 
-  <footer>
-    © 2026 ONLY BHAI THINGS
-  </footer>
+function filterWallpapers(keyword) {
+
+  const filtered = allWallpapers.filter(file =>
+    file.name.toLowerCase().includes(keyword.toLowerCase())
+  );
+
+  displayWallpapers(filtered);
+}
+
+loadWallpapers();
+
+</script>
 
 </body>
   </html>
