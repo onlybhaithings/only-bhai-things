@@ -4,7 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ONLY BHAI THINGS BY MUSTAKIN</title>
+<title>ONLY BHAI THINGS</title>
+
+<meta name="google-site-verification" content="-g1X61DAQf-PStdyqIlJW6KJMhlKHXOGzeVlmHQwApw" />
+
+<meta name="description" content="ONLY BHAI THINGS BY MUSTAKIN - Wallpapers and premium images.">
+<meta name="robots" content="index, follow">
 
 <style>
 * {
@@ -15,7 +20,7 @@
 
 body {
     background: #050505;
-    color: #ffffff;
+    color: #fff;
     font-family: Arial, sans-serif;
 }
 
@@ -100,7 +105,7 @@ header {
     margin-bottom: 10px;
 }
 
-/* FREE DOWNLOAD */
+/* DOWNLOAD */
 .download {
     width: 100%;
     border: none;
@@ -112,7 +117,7 @@ header {
     cursor: pointer;
 }
 
-/* PREMIUM IMAGE */
+/* PREMIUM */
 .premium-image {
     position: relative;
     overflow: hidden;
@@ -123,7 +128,6 @@ header {
     transform: scale(1.06);
 }
 
-/* LOCK */
 .lock {
     position: absolute;
     inset: 0;
@@ -144,7 +148,7 @@ header {
     font-weight: 900;
 }
 
-/* UNLOCK BUTTON */
+/* UNLOCK */
 .unlock {
     width: 100%;
     border: none;
@@ -161,7 +165,7 @@ header {
     display: none !important;
 }
 
-/* MODAL */
+/* PAYMENT MODAL */
 .modal {
     display: none;
     position: fixed;
@@ -231,7 +235,7 @@ footer {
     padding: 45px 10px;
 }
 
-/* SMALL SCREEN */
+/* MOBILE */
 @media (max-width: 500px) {
 
     .gallery {
@@ -264,7 +268,6 @@ footer {
 
 <body>
 
-<!-- HEADER -->
 <header>
 
     <div class="small-title">
@@ -278,34 +281,30 @@ footer {
 </header>
 
 
-<!-- MENU -->
+<!-- ONLY ALL AND PREMIUM -->
 <div class="menu">
 
-    <button
-        id="allBtn"
-        class="active"
-        onclick="showAll()">
+    <button id="allBtn"
+            class="active"
+            onclick="showAll()">
         ALL
     </button>
 
-    <button
-        id="premiumBtn"
-        onclick="showPremium()">
+    <button id="premiumBtn"
+            onclick="showPremium()">
         PREMIUM
     </button>
 
 </div>
 
 
-<!-- GALLERY -->
 <div class="gallery">
 
     <!-- FREE WALLPAPER -->
     <div class="card free">
 
-        <img
-            src="wallpapers/sal-man.jpeg"
-            alt="Salman Wallpaper">
+        <img src="wallpapers/sal-man.jpeg"
+             alt="Salman Wallpaper">
 
         <div class="card-info">
 
@@ -313,9 +312,8 @@ footer {
                 Salman Wallpaper
             </div>
 
-            <button
-                class="download"
-                onclick="downloadImage('wallpapers/sal-man.jpeg')">
+            <button class="download"
+                    onclick="downloadImage('wallpapers/sal-man.jpeg')">
                 DOWNLOAD
             </button>
 
@@ -329,9 +327,8 @@ footer {
 
         <div class="premium-image">
 
-            <img
-                src="wallpapers/BHAI-4K-premium.jpeg"
-                alt="Premium Wallpaper">
+            <img src="wallpapers/BHAI-4K-premium.jpeg"
+                 alt="Premium Wallpaper">
 
             <div class="lock">
 
@@ -353,9 +350,8 @@ footer {
                 BHAI 4K PREMIUM
             </div>
 
-            <button
-                class="unlock"
-                onclick="openPayment()">
+            <button class="unlock"
+                    onclick="openPayment()">
                 UNLOCK FOR PAY ₹10 ONLY
             </button>
 
@@ -367,9 +363,8 @@ footer {
 
 
 <!-- PAYMENT POPUP -->
-<div
-    class="modal"
-    id="paymentModal">
+<div class="modal"
+     id="paymentModal">
 
     <div class="modal-box">
 
@@ -378,7 +373,7 @@ footer {
         </h2>
 
         <div class="price">
-            UNLOCK FOR PAY ₹10 ONLY
+            UNLOCK FOR ₹10 ONLY
         </div>
 
         <p>
@@ -386,19 +381,16 @@ footer {
             ₹10 pay karein.
         </p>
 
-        <!-- SCANNER -->
-        <img
-            src="scanner.jpg"
-            class="scanner"
-            alt="Payment Scanner">
+        <img src="scanner.jpg"
+             class="scanner"
+             alt="Payment Scanner">
 
         <p>
             Scanner se ₹10 payment karein.
         </p>
 
-        <button
-            class="close"
-            onclick="closePayment()">
+        <button class="close"
+                onclick="closePayment()">
             CLOSE
         </button>
 
@@ -407,7 +399,6 @@ footer {
 </div>
 
 
-<!-- FOOTER -->
 <footer>
     © 2026 ONLY BHAI THINGS BY MUSTAKIN
 </footer>
@@ -415,7 +406,6 @@ footer {
 
 <script>
 
-/* ALL */
 function showAll() {
 
     document.querySelectorAll(".free")
@@ -436,7 +426,6 @@ function showAll() {
 }
 
 
-/* PREMIUM ONLY */
 function showPremium() {
 
     document.querySelectorAll(".free")
@@ -457,7 +446,6 @@ function showPremium() {
 }
 
 
-/* OPEN PAYMENT */
 function openPayment() {
 
     document.getElementById("paymentModal")
@@ -465,7 +453,6 @@ function openPayment() {
 }
 
 
-/* CLOSE PAYMENT */
 function closePayment() {
 
     document.getElementById("paymentModal")
@@ -473,7 +460,6 @@ function closePayment() {
 }
 
 
-/* DOWNLOAD */
 function downloadImage(image) {
 
     const link = document.createElement("a");
@@ -489,7 +475,6 @@ function downloadImage(image) {
 }
 
 
-/* CLOSE MODAL WHEN OUTSIDE IS CLICKED */
 window.onclick = function(event) {
 
     const modal =
@@ -504,4 +489,4 @@ window.onclick = function(event) {
 </script>
 
 </body>
-    </html>
+            </html>
