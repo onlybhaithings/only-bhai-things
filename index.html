@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ONLY BHAI THINGS</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #08090b;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding: 22px 18px;
+      text-align: center;
+      border-bottom: 1px solid #25262a;
+    }
+
+    header h1 {
+      font-size: 26px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: #999;
+      margin-top: 7px;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 35px 18px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #aaa;
+      line-height: 1.5;
+    }
+
+    .categories {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 5px 15px 20px;
+    }
+
+    .categories button {
+      background: #191b20;
+      color: white;
+      border: 1px solid #303238;
+      border-radius: 20px;
+      padding: 10px 16px;
+      white-space: nowrap;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .card {
+      background: #15171b;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #27292e;
+    }
+
+    .wallpaper {
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      background: linear-gradient(145deg, #171717, #4a0000);
+    }
+
+    .card-info {
+      padding: 12px;
+    }
+
+    .card-info h3 {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .download {
+      display: block;
+      text-align: center;
+      background: #e50914;
+      color: white;
+      text-decoration: none;
+      padding: 9px;
+      border-radius: 7px;
+      font-size: 13px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 15px;
+      margin-top: 20px;
+      border-top: 1px solid #25262a;
+      color: #777;
+      font-size: 13px;
+    }
+
+    @media (min-width: 700px) {
+      .gallery {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1100px;
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>ONLY BHAI THINGS</h1>
+    <p>HD Wallpapers • Images • More</p>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome Bhai 🔥</h2>
+    <p>
+      High quality wallpapers and images.
+      Download your favourite ones.
+    </p>
+  </section>
+
+  <div class="categories">
+    <button>All</button>
+    <button>4K Wallpapers</button>
+    <button>Bollywood</button>
+    <button>Attitude</button>
+    <button>HD Images</button>
+  </div>
+
+  <section class="gallery">
+
+    <div class="card">
+      <div class="wallpaper">ONLY<br>BHAI<br>THINGS 🔥</div>
+      <div class="card-info">
+        <h3>Only Bhai Wallpaper</h3>
+        <a class="download" href="#" download>Download</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="wallpaper">4K<br>WALLPAPER</div>
+      <div class="card-info">
+        <h3>4K Mobile Wallpaper</h3>
+        <a class="download" href="#" download>Download</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="wallpaper">BHAI<br>ATTITUDE 😎</div>
+      <div class="card-info">
+        <h3>Attitude Wallpaper</h3>
+        <a class="download" href="#" download>Download</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="wallpaper">HD<br>IMAGE 🔥</div>
+      <div class="card-info">
+        <h3>HD Image</h3>
+        <a class="download" href="#" download>Download</a>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 ONLY BHAI THINGS
+  </footer>
+
+</body>
+  </html>
