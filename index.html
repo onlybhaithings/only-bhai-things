@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ONLY BHAI THINGS</title>
+<title>ONLY BHAI THINGS BY MUSTAKIN</title>
 
 <style>
 * {
@@ -18,23 +18,41 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* HEADER */
 header {
   text-align: center;
-  padding: 30px 15px 20px;
+  padding: 30px 15px 22px;
   border-bottom: 1px solid #222;
 }
 
-header h1 {
+.brand {
   margin: 0;
-  font-size: 28px;
+  line-height: 1.1;
+}
+
+.brand span {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #bdbdbd;
+}
+
+.brand strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 34px;
   font-weight: 900;
+  letter-spacing: 3px;
 }
 
-header p {
+.subtitle {
   color: #999;
-  margin: 8px 0 0;
+  margin: 12px 0 0;
+  font-size: 14px;
 }
 
+/* CATEGORY BUTTONS */
 .categories {
   display: flex;
   gap: 8px;
@@ -48,10 +66,17 @@ header p {
   color: white;
   border: 0;
   border-radius: 20px;
-  padding: 10px 16px;
+  padding: 10px 17px;
   white-space: nowrap;
+  font-weight: bold;
+  cursor: pointer;
 }
 
+.categories button:hover {
+  background: #33343a;
+}
+
+/* GALLERY */
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -83,6 +108,7 @@ header p {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 9px;
+  word-break: break-word;
 }
 
 .download {
@@ -98,22 +124,54 @@ header p {
   font-size: 13px;
 }
 
+.download:hover {
+  background: #ff1822;
+}
+
 .loading {
   text-align: center;
   padding: 40px;
   color: #aaa;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   color: #777;
-  padding: 40px 10px;
+  padding: 45px 10px;
   font-size: 13px;
 }
 
+/* DESKTOP */
 @media (min-width: 700px) {
   .gallery {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+
+  header {
+    padding: 27px 10px 20px;
+  }
+
+  .brand span {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+  }
+
+  .brand strong {
+    font-size: 29px;
+    letter-spacing: 2px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .categories {
+    justify-content: flex-start;
   }
 }
 </style>
@@ -122,24 +180,38 @@ footer {
 <body>
 
 <header>
-  <h1>ONLY BHAI THINGS 🔥</h1>
-  <p>HD Wallpapers • Images • More</p>
+
+  <h1 class="brand">
+    <span>ONLY BHAI THINGS BY</span>
+    <strong>MUSTAKIN</strong>
+  </h1>
+
+  <p class="subtitle">
+    HD Wallpapers • Images • More
+  </p>
+
 </header>
 
 <div class="categories">
+
   <button onclick="showAll()">All</button>
   <button onclick="filterWallpapers('4k')">4K</button>
   <button onclick="filterWallpapers('bollywood')">Bollywood</button>
   <button onclick="filterWallpapers('attitude')">Attitude</button>
   <button onclick="filterWallpapers('hd')">HD</button>
+
 </div>
 
 <div id="gallery" class="gallery">
-  <div class="loading">Loading wallpapers... 🔥</div>
+
+  <div class="loading">
+    Loading wallpapers...
+  </div>
+
 </div>
 
 <footer>
-  © 2026 ONLY BHAI THINGS
+  © 2026 ONLY BHAI THINGS BY MUSTAKIN
 </footer>
 
 <script>
@@ -149,6 +221,8 @@ const REPOSITORY = "only-bhai-things";
 const FOLDER = "wallpapers";
 
 let allWallpapers = [];
+
+/* LOAD WALLPAPERS FROM GITHUB */
 
 async function loadWallpapers() {
 
@@ -176,14 +250,18 @@ async function loadWallpapers() {
 
   } catch (error) {
 
-    gallery.innerHTML =
-      `<div class="loading">
+    gallery.innerHTML = `
+      <div class="loading">
         Wallpapers load nahi ho paaye 😕<br>
         Thodi der baad refresh karo.
-      </div>`;
+      </div>
+    `;
 
   }
+
 }
+
+/* DISPLAY WALLPAPERS */
 
 function displayWallpapers(files) {
 
@@ -191,17 +269,18 @@ function displayWallpapers(files) {
 
   if (files.length === 0) {
 
-    gallery.innerHTML =
-      `<div class="loading">
+    gallery.innerHTML = `
+      <div class="loading">
         Abhi koi wallpaper nahi hai 📸
-      </div>`;
+      </div>
+    `;
 
     return;
   }
 
   gallery.innerHTML = "";
 
-  files.reverse().forEach(file => {
+  [...files].reverse().forEach(file => {
 
     const imageURL =
       `https://raw.githubusercontent.com/${USERNAME}/${REPOSITORY}/main/${FOLDER}/${encodeURIComponent(file.name)}`;
@@ -241,9 +320,13 @@ function displayWallpapers(files) {
 
 }
 
+/* ALL */
+
 function showAll() {
   displayWallpapers(allWallpapers);
 }
+
+/* FILTER */
 
 function filterWallpapers(keyword) {
 
@@ -254,9 +337,11 @@ function filterWallpapers(keyword) {
   displayWallpapers(filtered);
 }
 
+/* START */
+
 loadWallpapers();
 
 </script>
 
 </body>
-  </html>
+</html>
